@@ -55,7 +55,6 @@ nav button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 .content> :nth-child(1) {
@@ -250,9 +249,10 @@ nav button {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
     list-style: none;
     font-weight: 400;
-    font-size: 13.5px;
+    font-size: 0.9rem;
     line-height: 30px;
     margin-bottom: 10px;
 }
@@ -266,7 +266,7 @@ footer {
     max-width: 125vh;
     color: gainsboro;
     font-weight: 400;
-    font-size: 15.5px;
+    font-size: 1rem;
     padding: 30px;
     line-height: 50px;
 }
@@ -414,11 +414,116 @@ footer {
         margin: 10px auto;
         padding: 10px 30px;
     }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.9px;
+    }
 }
 
 @media only screen and (max-width: 499px) {
-    body {
-        background-color: white;
+    .main {
+        height: 71vh;
     }
-
+    .main .box {
+        height: 71vh;
+        width: 100%;
+    }
+    nav {
+        max-width: 90vw;
+        height: 90px;
+    }
+    .hide{
+        display: none;
+    }
+    #logo {
+        width: 90px;
+    }
+    .content> :nth-child(1) {
+        font-size: 28px;
+    }
+    .content> :nth-child(2) {
+        font-size: 16px;
+        padding: 0px;
+    }
+    .content> :nth-child(3), .email{
+        font-size: 16.4px;
+        padding: 0px 60px;
+    }
+    .email-button {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+    .red-btn-signin {
+        margin-left: 3px;
+    }
+    .red-btn-get-started {
+        padding: 5px 9px;
+        font-size: 18px;
+    }
+    .main input, .footer-button input {
+        width: 68vw;
+    }  
+    
+    .first-section {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 85vw;
+        margin-top: 40px;
+        margin-bottom: 65px;
+    } 
+    .media-first-section img {
+        width: 20rem;
+    }
+    
+    .media-first-section video {       
+        right: 2.85rem;
+        top: 3.1rem;
+        width: 14.5rem;
+    }
+    
+    .first-section>div :nth-child(1) {
+        font-size: 30px;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    
+    .first-section>div :nth-child(2) {
+        font-size: 16.5px;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    .order-text{
+        order: 1;
+    }
+    .order-media{
+        order: 2;
+    } 
+    .third-section img {
+        width: 20rem;
+    }
+    .third-section video {
+        right: 4rem;
+        top: 2rem;
+        width: 12.5rem;
+    }
+    .FAQ-Heading {
+        font-size: 29px;
+    }
+    .FAQ-box {
+        padding: 16px;
+        font-size: 18px;
+    }
+    .email{
+        font-size: 17px;
+        padding: 0px 25px;
+    }
+    footer {
+        margin: 10px auto;
+        padding: 10px 30px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.9px;
+    }
 }
