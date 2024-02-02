@@ -12,7 +12,7 @@ body {
 
 .main {
     height: 76vh;
-    background: url(/Netflix/IMG/background.jpg);
+    background: url(Netflix/IMG/background.jpg);
     position: relative;
     background-position: top left;
     background-repeat: no-repeat;
