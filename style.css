@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 76vh;
+    background: url(/Netflix/IMG/background.jpg);
+    position: relative;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 76vh;
+    width: 100%;
+    margin: auto;
+    opacity: 0.65;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85vw;
+    margin: auto;
+    height: 100px;
+    position: relative;
+    z-index: 3;
+    opacity: 0.;
+}
+
+nav button {
+    position: relative;
+    z-index: 3;
+}
+
+.content,.email {
+    color: white;
+    position: relative;
+    z-index: 3;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content> :nth-child(1) {
+    font-weight: 900;
+    font-size: 44px;
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.content> :nth-child(2) {
+    font-weight: 400;
+    font-size: 22.5px;
+    text-align: center;
+    padding: 0px 55px;
+}
+
+.content> :nth-child(3), .email {
+    font-weight: 400;
+    font-size: 19.5px;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 53px;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(35, 35, 35);
+}
+
+.btn {
+    padding: 3px 17px;
+    background-color: rgb(23, 23, 23, 0.5);
+    border: 1px solid gray;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.red-btn-signin {
+    background-color: rgb(229, 9, 20);
+    border: 1px solid rgb(229, 9, 20);
+    font-size: 14px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.red-btn-signin:hover {
+    background-color: rgb(209, 9, 20);
+}
+
+.red-btn-get-started {
+    background-color: rgb(229, 9, 20);
+    border: 1px solid rgb(229, 9, 20);
+    padding: 5px 30px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.red-btn-get-started:hover {
+    background-color: rgb(209, 9, 20);
+}
+
+.main input, .footer-button input {
+    padding: 13px;
+    width: 350px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: rgb(23, 23, 23, 0.5);
+    color: white;
+}
+
+.main input:focus,
+.footer-button input:focus {
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: 2px;
+}
+
+.main input::placeholder,
+.footer-button input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.email-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    gap: 7px;
+}
+
+.first-section {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 60vw;
+    margin-top: 50px;
+    margin-bottom: 105px;
+}
+.media-first-section {
+    position: relative;
+}
+
+.media-first-section img {
+    position: relative;
+    z-index: 10;
+    width: 575px;
+}
+
+.media-first-section video {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 25vw;
+}
+
+.third-section {
+    position: relative;
+}
+
+.third-section img {
+    position: relative;
+    z-index: 10;
+    width: 30vw;
+}
+
+.third-section video {
+    position: absolute;
+    right: 120px;
+    top: 30px;
+    width: 18vw;
+}
+
+.first-section>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section>div :nth-child(1) {
+    font-weight: 900;
+    font-size: 44px;
+    text-align: left;
+}
+
+.first-section>div :nth-child(2) {
+    font-weight: 400;
+    font-size: 22.5px;
+    text-align: left;
+}
+
+.FAQ {
+    color: white;
+    margin: 28px auto;
+    padding: 25px;
+}
+
+.FAQ-Heading {
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.FAQ-box {
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    max-width: 120vh;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    transition: all 0.3s;
+}
+
+.FAQ-box:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.footer-email {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: gainsboro;
+}
+
+footer {
+    margin: 30px auto;
+    max-width: 125vh;
+    color: gainsboro;
+    font-weight: 400;
+    font-size: 15.5px;
+    padding: 30px;
+    line-height: 50px;
+}
+
+@media only screen and (min-width: 1280px) {
+    nav {
+        max-width: 75vw;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+    nav {
+        max-width: 93.5vw;
+    }
+    .first-section {
+        gap: 20px;
+        max-width: 90vw;
+        margin-top: 75px;
+        margin-bottom: 80px;
+    } 
+
+    .media-first-section img {
+        width: 26rem;
+    }
+    
+    .media-first-section video {       
+        right: 2.6rem;
+        top: 4rem;
+        width: 20rem;
+    } 
+    .first-section>div :nth-child(1) {
+        line-height: 4rem;
+        margin-bottom: 10px;
+    }
+    
+    .first-section>div :nth-child(2) {
+        line-height: 2rem;
+    }
+    .third-section img {
+        width: 25.5rem;
+    }
+
+    .third-section video {
+        right: 5rem;
+        top: 2.5rem;
+        width: 16rem;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 959px) {
+    .main {
+        height: 56vh;
+    }
+
+    .main .box {
+        height: 56vh;
+        width: 100%;
+    }
+    nav {
+        max-width: 90vw;
+        height: 90px;
+    }
+    #logo {
+        width: 90px;
+    }
+
+    .content> :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .content> :nth-child(2) {
+        font-size: 17px;
+    }
+
+    .red-btn-signin {
+        margin-left: 3px;
+    }
+
+    .red-btn-get-started {
+        padding: 5px 9px;
+    }
+
+    .content> :nth-child(3), .email{
+        font-size: 16.4px;
+        padding: 0px 63px;
+    }
+    .main input, .footer-button input {
+        width: 35vw;
+    }  
+    
+    .first-section {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 85vw;
+        margin-top: 40px;
+        margin-bottom: 65px;
+    } 
+    .media-first-section img {
+        width: 30rem;
+    }
+    
+    .media-first-section video {       
+        right: 4rem;
+        top: 4.5rem;
+        width: 22rem;
+    }
+    
+    .first-section>div :nth-child(1) {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .first-section>div :nth-child(2) {
+        font-size: 16.5px;
+        text-align: center;
+    }
+    .order-text{
+        order: 1;
+    }
+    .order-media{
+        order: 2;
+    }
+    
+    .third-section img {
+        width: 30rem;
+    }
+
+    .third-section video {
+        right: 6rem;
+        top: 3rem;
+        width: 19rem;
+    }
+    .FAQ-Heading {
+        font-size: 29px;
+    }
+    .FAQ-box {
+        padding: 16px;
+        font-size: 18px;
+    }
+    .email{
+        font-size: 17px;
+        padding: 0px 15px;
+    }
+    footer {
+        margin: 10px auto;
+        padding: 10px 30px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    body {
+        background-color: white;
+    }
+
+}
